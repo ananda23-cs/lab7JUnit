@@ -31,8 +31,8 @@ public class TwoPoints {
 
     /** assign a random value to a point */
     public void randomValue(int index) {
-        int x = rand.nextInt(20) - 10;
-        int y = rand.nextInt(20) - 10;
+        int x = rand.nextInt(9) - 5;
+        int y = rand.nextInt(9) - 5;
         setPoint(index, x, y);
     }
 
@@ -67,7 +67,7 @@ public class TwoPoints {
         int xDiff = points[0].x - points[1].x;
         int yDiff = points[0].y - points[1].y;
 
-        result = xDiff / yDiff;
+        result = yDiff / xDiff;
         return result;
     }
 
